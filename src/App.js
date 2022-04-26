@@ -1,6 +1,7 @@
 import './css/App.css';
 import './css/backgrounds.css';
 import { Skills } from './Skills'
+import { Projects } from './Projects'
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
         <Skills/>
       </Section>
       <Section name="portfolio">
-
+        <Projects />
       </Section>
       <Section name="contact">
 
