@@ -1,17 +1,8 @@
 import './css/App.css';
 import './css/backgrounds.css';
-import './css/skills.css'
-import { skillData } from './data/skills';
+import { Skills } from './Skills'
 
 const App = () => {
-  const skillsSection = skillData.map((skill, index) =>
-    <div className="skill" key={index}>
-      <a href={skill.link} target="_blank">
-        <img className="skill-icon" src={require(`${skill.imgSource}`)}/>
-      </a>
-      <h3>{skill.displayName}</h3>
-    </div>
-  )
   return (
     <div className="App">
       <div className="section home">
@@ -28,7 +19,7 @@ const App = () => {
         <p>Outside of software, I love swimming in the summer and skiing in the winter.  Beach bonfires, dinner parties, and jacuzzis are my favorite things about existing.</p>
       </Section>
       <Section name="skills">
-        {skillsSection}
+        <Skills/>
       </Section>
       <Section name="portfolio">
 
