@@ -7,7 +7,7 @@ export const Skills = () => {
             <a href={skill.link} target="_blank">
                 <img className="skill-icon" src={require(`${skill.imgSource}`)}/>
             </a>
-            <h3>{skill.displayName}</h3>
-      </div>
+            <p className="skill-name">{skill.displayName}</p>
+        </div>
     )
 }

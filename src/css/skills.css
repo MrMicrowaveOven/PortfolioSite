@@ -1,13 +1,24 @@
-/* .content.skills {
-    display: "flex";
-    flex-direction: "row";
-} */
+.content.skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .skill-icon {
     width: 115px;
     height: 110px;
 }
 
+.skill-name {
+    text-align: center;
+    margin: 4px;
+    font-size: 20px;
+}
+
 .skill {
-    width: 200px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
 }
