@@ -1,0 +1,13 @@
+.content.skills {
+    display: "flex";
+    flex-direction: "row";
+}
+
+.skill-icon {
+    width: 115px;
+    height: 110px;
+}
+
+.skill {
+    width: 200px
+}
