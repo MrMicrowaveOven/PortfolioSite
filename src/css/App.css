@@ -1,3 +1,43 @@
 h1, h2, p {
     margin: 0px;
 }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    width: 300px;
+    background-color: #E6C229;
+    margin: 30px;
+    height: 375px;
+}
+
+.project-image {
+    width: 280px;
+    height: 225px;
+    margin: 10px;
+}
+
+.content.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-name {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.project-tagline {
+    text-align: center;
+    font-size: 16px;
+}
+
+.section.portfolio {
+    max-width: 1200px;
+}
