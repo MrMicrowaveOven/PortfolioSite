@@ -1,11 +1,48 @@
-h1, h2, p {
+h1, p {
     margin: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10px;
 }
 
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+}
+
+.section.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 80%;
+}
+
+.content.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
 }
 
 .project {
@@ -21,11 +58,6 @@ h1, h2, p {
     margin: 10px;
 }
 
-.content.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .project-name {
     text-align: center;
     font-size: 24px;
@@ -36,8 +68,4 @@ h1, h2, p {
 .project-tagline {
     text-align: center;
     font-size: 16px;
-}
-
-.section.portfolio {
-    max-width: 1200px;
 }

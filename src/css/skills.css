@@ -1,8 +1,21 @@
+.section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .content.skills {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .skill-icon {
@@ -14,11 +27,4 @@
     text-align: center;
     margin: 4px;
     font-size: 20px;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 12px;
 }
