@@ -13,28 +13,14 @@ const App = () => {
   const contactElement = useRef(null)
 
   const navigate = section => {
-    let topOfElement
-    switch (section) {
-      case "home":
-        topOfElement = homeElement.current.getBoundingClientRect().top
-        break
-      case "about":
-        topOfElement = aboutElement.current.getBoundingClientRect().top
-        console.log(topOfElement)
-        break
-      case "skills":
-        topOfElement = skillsElement.current.getBoundingClientRect().top
-        console.log(topOfElement)
-        break
-      case "portfolio":
-        topOfElement = portfolioElement.current.getBoundingClientRect().top
-        console.log(topOfElement)
-        break
-      case "contact":
-        topOfElement = contactElement.current.getBoundingClientRect().top
-        console.log(topOfElement)
-      break
-    }
+    const elementToScrollTo = {
+      home: homeElement,
+      about: aboutElement,
+      skills: skillsElement,
+      portfolio: portfolioElement,
+      contact: contactElement
+    }[section]
+    const topOfElement = elementToScrollTo.current.getBoundingClientRect().top
     window.scroll({top: topOfElement, behavior: "smooth"})
   }
 
