@@ -79,7 +79,7 @@ h2 {
     width: 300px;
     background-color: #E6C229;
     margin: 30px;
-    height: 375px;
+    height: 400px;
 }
 
 .project-image {
@@ -98,4 +98,21 @@ h2 {
 .project-tagline {
     text-align: center;
     font-size: 16px;
+}
+
+.github-icon-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin: auto;
 }
