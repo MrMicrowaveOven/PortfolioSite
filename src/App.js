@@ -3,7 +3,7 @@ import './css/App.css';
 import './css/backgrounds.css';
 import { Skills } from './Skills'
 import { Projects } from './Projects'
-
+import Resume from "./data/Resume-BenjaminZagorski.pdf"
 
 const App = () => {
   const homeElement = useRef(null)
@@ -43,8 +43,16 @@ const App = () => {
       <div className="section home">
         <h1 className="name-text">Benjamin Zagorski</h1>
         <h2 className="job-title-text">Full-Stack Software Engineer</h2>
-        <a>Download my Resume</a>
-        <a>Check out my Github</a>
+        <a href={Resume} target="_blank" download="Resume-BenjaminZagorski">
+          <div className="banner-button">
+            Download my Resume
+          </div>
+        </a>
+        <a>
+          <div className="banner-button">
+            Check out my Github
+          </div>
+        </a>
       </div>
       <div ref={aboutElement}>
         <Section name="about me">

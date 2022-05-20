@@ -67,6 +67,17 @@ h2 {
     align-items: center;
 }
 
+.banner-button {
+  width: 100px;
+  height: 50px;
+  background-color: gray;
+  margin: 10px;
+}
+
+.banner-button-text {
+
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
