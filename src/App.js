@@ -42,13 +42,17 @@ const App = () => {
     <div className="App">
       {navMenu()}
       <div className="section home">
-        <h1 className="name-text">Benjamin Zagorski</h1>
-        <h2 className="job-title-text">Full-Stack Software Engineer</h2>
-        <div className="banner-buttons">
-          <Button link={Resume} text="Download my Resume" />
-          <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
+        <div className="home-info">
+          <h1 className="name-text">Benjamin Zagorski</h1>
+          <h2 className="job-title-text">Full-Stack Software Engineer</h2>
+          <div className="banner-buttons">
+            <Button link={Resume} text="Download my Resume" />
+            <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
+          </div>
         </div>
-        <img src={Photo} className="photo"/>
+        <div className="photo-section">
+          <img src={Photo} className="photo"/>
+        </div>
       </div>
       <div className="section-wrapper" ref={aboutElement}>
         <Section name="about me">
@@ -94,13 +98,13 @@ const Section = ({children, name}) => {
 
 const Button = ({link, text}) => {
   return (
-    <a href={link} target="_blank" download="Resume-BenjaminZagorski">
-      <div className="banner-button">
+    <div className="banner-button">
+      <a href={link} target="_blank" download="Resume-BenjaminZagorski" className="banner-button-link">
         <p className="banner-button-text">
           {text}
         </p>
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
 
