@@ -43,6 +43,10 @@ h2 {
     align-items: center;
 }
 
+.section-wrapper {
+  background-color: #6610F2;
+}
+
 .title {
     text-align: center;
 }
@@ -67,15 +71,30 @@ h2 {
     align-items: center;
 }
 
+.banner-buttons {
+  margin-left: 40px;
+}
+
 .banner-button {
-  width: 100px;
+  width: 200px;
   height: 50px;
   background-color: gray;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-button-text {
+  all: unset;
+  text-decoration: none;
+  color: white;
+}
 
+.photo {
+  width: 400px;
+  height: 600px;
+  float: right;
 }
 
 .projects {

@@ -4,6 +4,7 @@ import './css/backgrounds.css';
 import { Skills } from './Skills'
 import { Projects } from './Projects'
 import Resume from "./data/Resume-BenjaminZagorski.pdf"
+import Photo from "./photo.jpg"
 
 const App = () => {
   const homeElement = useRef(null)
@@ -43,18 +44,13 @@ const App = () => {
       <div className="section home">
         <h1 className="name-text">Benjamin Zagorski</h1>
         <h2 className="job-title-text">Full-Stack Software Engineer</h2>
-        <a href={Resume} target="_blank" download="Resume-BenjaminZagorski">
-          <div className="banner-button">
-            Download my Resume
-          </div>
-        </a>
-        <a>
-          <div className="banner-button">
-            Check out my Github
-          </div>
-        </a>
+        <div className="banner-buttons">
+          <Button link={Resume} text="Download my Resume" />
+          <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
+        </div>
+        <img src={Photo} className="photo"/>
       </div>
-      <div ref={aboutElement}>
+      <div className="section-wrapper" ref={aboutElement}>
         <Section name="about me">
           <h3>Full-Stack Software Engineer</h3>
           <h4>Available for Hire</h4>
@@ -93,6 +89,18 @@ const Section = ({children, name}) => {
         {children}
       </div>
     </div>
+  )
+}
+
+const Button = ({link, text}) => {
+  return (
+    <a href={link} target="_blank" download="Resume-BenjaminZagorski">
+      <div className="banner-button">
+        <p className="banner-button-text">
+          {text}
+        </p>
+      </div>
+    </a>
   )
 }
 
