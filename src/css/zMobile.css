@@ -50,5 +50,6 @@
 
   .contact-info, .contact-form {
     padding: 0px;
+    padding-top: 15px;
   }
 }
