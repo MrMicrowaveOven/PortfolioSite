@@ -32,6 +32,11 @@ export const Contact = () => {
         setEmailSentStatus(false)
       });
   };
+
+  const formValid = Object.keys(emailInfo).map(key => {
+    return emailInfo[key].trim() !== ""
+  }).every(value => value !== false)
+
   return (
     <div className="contact-body">
       <div className="contact-info">
@@ -78,7 +83,7 @@ export const Contact = () => {
             cols="30"
           />
           <br/>
-          <button type='submit'>Submit</button>
+          <button type='submit' disabled={formValid ? "" : "disabled"}>Submit</button>
         </form>
         <div className={emailSentStatus === true ? "email-confirmation-message" : "hidden"}>Email sent!</div>
         <div className={emailSentStatus === false ? "email-failure-message" : "hidden"}>
