@@ -9,7 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link id="apple-touch-icon" rel="apple-touch-icon" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,14 +40,18 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      var favicon = document.getElementById('favicon');
       var favicons = [
         'favicons/bulbasaur.ico',
         'favicons/charmander.ico',
         'favicons/pikachu.ico'
       ]
-      var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
-      favicon.href = faviconName;
+      var iconName = favicons[Math.floor(Math.random() * favicons.length)]
+
+      var favicon = document.getElementById('favicon');
+      favicon.href = iconName;
+
+      var appleTouchIcon = document.getElementById('apple-touch-icon');
+      appleTouchIcon.href = iconName
     </script>
   </body>
 </html>
