@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link id="favicon" rel="shortcut icon" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -39,5 +39,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var favicon = document.getElementById('favicon');
+      var favicons = [
+        'favicons/bulbasaur.ico',
+        'favicons/charmander.ico',
+        'favicons/pikachu.ico'
+      ]
+      var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
+      favicon.href = faviconName;
+    </script>
   </body>
 </html>
