@@ -1,19 +1,26 @@
-.section.home {
-    background-color: #89043D;
-  }
+.wide-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .section.about {
-    background-color: #B2ABF2;
-  }
+.home-wide-section {
+  background-color: #89043D;
+}
 
-  .section.skills {
-    background-color: #2FE6DE;
-  }
+.about-wide-section {
+  background-color: #B2ABF2;
+}
 
-  .section.portfolio {
-    background-color: #1C3041;
-  }
+.skills-wide-section {
+  background-color: #2FE6DE;
+}
 
-  .section.contact {
-    background-color: #18F2B2;
-  }
+.portfolio-wide-section {
+  background-color: #1C3041;
+}
+
+.contact-wide-section {
+  background-color: #18F2B2;
+}

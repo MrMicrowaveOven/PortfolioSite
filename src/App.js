@@ -41,43 +41,45 @@ const App = () => {
   return (
     <div className="App">
       {navMenu()}
-      <div className="section home">
-        <div className="home-info">
-          <h1 className="name-text">Benjamin Zagorski</h1>
-          <h2 className="job-title-text">Full-Stack Software Engineer</h2>
-          <div className="banner-buttons">
-            <Button link={Resume} text="Download my Resume" />
-            <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
+      <div className="wide-section home-wide-section">
+        <div className="section home">
+          <div className="home-info">
+            <h1 className="name-text">Benjamin Zagorski</h1>
+            <h1 className="job-title-text">Full-Stack Software Engineer</h1>
+            <div className="banner-buttons">
+              <Button link={Resume} text="Download my Resume" />
+              <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
+            </div>
+          </div>
+          <div className="photo-section">
+            <img src={Photo} className="photo"/>
           </div>
         </div>
-        <div className="photo-section">
-          <img src={Photo} className="photo"/>
-        </div>
       </div>
-      <div className="section-wrapper" ref={aboutElement}>
-        <Section name="about me">
+      <div ref={aboutElement} className="wide-section about-wide-section">
+        <Section name="about" title="about me">
           <h3>Full-Stack Software Engineer</h3>
           <h4>Available for Hire</h4>
           <br/>
-          <p>I'm Benjamin, an energetic web developer with over 4 years experience in Ruby on Rails and React.  I come from a background in mathematics, education, and probability.</p>
+          <p>I'm Benjamin, an energetic web developer with over 5 years experience in Ruby on Rails and React.  I come from a background in mathematics, education, and probability.</p>
           <br/>
           <p>I love coding, so I have a lot of personal projects (see below).  I turn every project and assignment into an opportunity to learn.  I am a big fan of playing around with different libraries to learn the ins and outs of them.  I enjoy writing tests, building interfaces, and everything about favicons.</p>
           <br/>
           <p>Outside of software, I love swimming in the summer and skiing in the winter.  Beach bonfires, dinner parties, and jacuzzis are my favorite things about existing.</p>
         </Section>
       </div>
-      <div ref={skillsElement}>
-        <Section name="skills">
+      <div ref={skillsElement} className="wide-section skills-wide-section">
+        <Section name="skills" title="skills">
           <Skills/>
         </Section>
       </div>
-      <div ref={portfolioElement} className="section-wrapper">
-        <Section name="portfolio">
+      <div ref={portfolioElement} className="wide-section portfolio-wide-section">
+        <Section name="portfolio" title="portfolio">
           <Projects />
         </Section>
       </div>
-      <div ref={contactElement}>
-        <Section name="contact">
+      <div ref={contactElement} className="wide-section contact-wide-section">
+        <Section name="contact" title="contact me">
 
         </Section>
       </div>
@@ -85,12 +87,14 @@ const App = () => {
   );
 }
 
-const Section = ({children, name}) => {
+const Section = ({children, name, title}) => {
   return (
-    <div className={"section " + name}>
-      <h2 className="title">{name.toUpperCase()}</h2>
-      <div className={"content " + name}>
-        {children}
+    <div className={"section-wrapper " + name + "-section-wrapper"}>
+      <div className={"section " + name}>
+        <h2 className="title">{title?.toUpperCase()}</h2>
+        <div className={"content " + name}>
+          {children}
+        </div>
       </div>
     </div>
   )
