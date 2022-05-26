@@ -7,11 +7,10 @@ import './css/navMenu.css'
 import './css/project.css'
 import './css/skills.css'
 import './css/zMobile.css'
+import { Home } from './Home'
 import { About } from './About'
 import { Skills } from './Skills'
 import { Projects } from './Projects'
-import Resume from "./data/Resume-BenjaminZagorski.pdf"
-import Photo from "./photo.jpg"
 
 const App = () => {
   const homeElement = useRef(null)
@@ -49,19 +48,7 @@ const App = () => {
     <div className="App">
       {navMenu()}
       <div className="wide-section home-wide-section">
-        <div className="section home">
-          <div className="home-info">
-            <h1 className="name-text">Benjamin Zagorski</h1>
-            <h1 className="job-title-text">Full-Stack Software Engineer</h1>
-            <div className="banner-buttons">
-              <Button link={Resume} text="Download my Resume" />
-              <Button link="https://github.com/MrMicrowaveOven" text="Check out my Github" />
-            </div>
-          </div>
-          <div className="photo-section">
-            <img src={Photo} className="photo"/>
-          </div>
-        </div>
+        <Home />
       </div>
       <div ref={aboutElement} className="wide-section about-wide-section">
         <Section name="about" title="about me">
@@ -96,18 +83,6 @@ const Section = ({children, name, title}) => {
           {children}
         </div>
       </div>
-    </div>
-  )
-}
-
-const Button = ({link, text}) => {
-  return (
-    <div className="banner-button">
-      <a href={link} target="_blank" download="Resume-BenjaminZagorski" className="banner-button-link">
-        <p className="banner-button-text">
-          {text}
-        </p>
-      </a>
     </div>
   )
 }
