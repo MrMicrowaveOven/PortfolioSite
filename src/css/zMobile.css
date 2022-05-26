@@ -1,4 +1,7 @@
 @media (max-width: 750px) {
+  .nav-menu {
+    height: 30px;
+  }
   .nav-menu-block {
     font-size: 12.5px;
   }

@@ -4,6 +4,9 @@
   max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  top: 0px;
+  background-color: white;
 }
 
 .nav-menu-block {

@@ -1,0 +1,23 @@
+.contact-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-info-title {
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom: black solid 2px;
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}

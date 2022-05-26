@@ -2,6 +2,7 @@ import { useRef } from "react"
 import './css/about.css'
 import './css/App.css';
 import './css/backgrounds.css';
+import './css/contact.css';
 import './css/home.css'
 import './css/navMenu.css'
 import './css/project.css'
@@ -11,6 +12,7 @@ import { Home } from './Home'
 import { About } from './About'
 import { Skills } from './Skills'
 import { Projects } from './Projects'
+import { Contact } from './Contact'
 
 const App = () => {
   const homeElement = useRef(null)
@@ -27,8 +29,9 @@ const App = () => {
       projects: projectsElement,
       contact: contactElement
     }[section]
-    const topOfElement = elementToScrollTo.current.getBoundingClientRect().top
-    window.scroll({top: topOfElement, behavior: "smooth"})
+    elementToScrollTo.current.scrollIntoView(
+        { behavior: "smooth" }
+    )
   }
 
   const navMenu = () => {
@@ -47,7 +50,7 @@ const App = () => {
   return (
     <div className="App">
       {navMenu()}
-      <div className="wide-section home-wide-section">
+      <div ref={homeElement} className="wide-section home-wide-section">
         <Home />
       </div>
       <div ref={aboutElement} className="wide-section about-wide-section">
@@ -57,7 +60,7 @@ const App = () => {
       </div>
       <div ref={skillsElement} className="wide-section skills-wide-section">
         <Section name="skills" title="skills">
-          <Skills/>
+          <Skills />
         </Section>
       </div>
       <div ref={projectsElement} className="wide-section projects-wide-section">
@@ -67,7 +70,7 @@ const App = () => {
       </div>
       <div ref={contactElement} className="wide-section contact-wide-section">
         <Section name="contact" title="contact me">
-
+          <Contact />
         </Section>
       </div>
     </div>

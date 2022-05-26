@@ -5,6 +5,8 @@ h1, p {
 h2 {
   font-size: 40px;
   margin: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .App {
@@ -28,7 +30,6 @@ h2 {
 
 .title {
   text-align: center;
-  margin-top: 20px;
 }
 
 .section {
