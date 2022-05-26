@@ -1,3 +1,14 @@
+@media (max-width: 1200px) {
+  .nav-menu-block {
+    font-size: 12.5px;
+    border-left: .5px black solid;
+    border-right: none;
+  }
+
+  .nav-menu-block-first {
+    border-left: none;
+  }
+}
 @media (max-width: 750px) {
   .nav-menu-wide {
     height: 30px;
@@ -6,6 +17,7 @@
   .nav-menu-block {
     font-size: 12.5px;
   }
+
   .section.home {
     flex-direction: column-reverse;
     align-items: center;
