@@ -18,10 +18,10 @@ export const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      'service_toa61pc',
-      'template_u52gh0p',
+      process.env.REACT_APP_EMAIL_SERVICE_ID,
+      process.env.REACT_APP_EMAIL_TEMPLATE_ID,
       emailInfo,
-      'ejI_EMnnF_RXl6Jyi'
+      process.env.REACT_APP_EMAIL_USER_ID
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
