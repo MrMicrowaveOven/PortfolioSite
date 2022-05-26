@@ -16,7 +16,7 @@ const App = () => {
   const homeElement = useRef(null)
   const aboutElement = useRef(null)
   const skillsElement = useRef(null)
-  const portfolioElement = useRef(null)
+  const projectsElement = useRef(null)
   const contactElement = useRef(null)
 
   const navigate = section => {
@@ -24,7 +24,7 @@ const App = () => {
       home: homeElement,
       about: aboutElement,
       skills: skillsElement,
-      portfolio: portfolioElement,
+      projects: projectsElement,
       contact: contactElement
     }[section]
     const topOfElement = elementToScrollTo.current.getBoundingClientRect().top
@@ -34,7 +34,7 @@ const App = () => {
   const navMenu = () => {
     return (
       <div className="nav-menu">
-        {["home", "about", "skills", "portfolio", "contact"].map((sectionName, index) =>
+        {["home", "about", "skills", "projects", "contact"].map((sectionName, index) =>
           <div className="nav-menu-block" key={index} onClick={() => navigate(sectionName)}>
             <div className="nav-menu-text">
               {sectionName.toUpperCase()}
@@ -60,8 +60,8 @@ const App = () => {
           <Skills/>
         </Section>
       </div>
-      <div ref={portfolioElement} className="wide-section portfolio-wide-section">
-        <Section name="portfolio" title="portfolio">
+      <div ref={projectsElement} className="wide-section projects-wide-section">
+        <Section name="projects" title="projects">
           <Projects />
         </Section>
       </div>
