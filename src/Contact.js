@@ -19,7 +19,7 @@ export const Contact = () => {
         <div>Email me at Benj@Zagorski.com</div>
       </div>
       <div className="contact-form">
-        <div>Say hello!</div>
+        <div className="contact-form-title">Say Hello!</div>
         <div>Name</div>
         <div>Email</div>
         <div>Message</div>

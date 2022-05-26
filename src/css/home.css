@@ -7,18 +7,21 @@
 .home-info {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .name-text {
   max-width: 500px;
   margin-top: 40px;
   margin-left: 40px;
+  font-size: 40px;
 }
 
 .job-title-text {
   margin-top: 40px;
   margin-left: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .banner-buttons {
@@ -65,4 +68,5 @@
   width: 300px;
   height: 450px;
   margin: 50px;
+  margin-top: 70px;
 }

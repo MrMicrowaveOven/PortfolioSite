@@ -1,12 +1,19 @@
-.nav-menu {
+.nav-menu-wide {
+  width: 100%;
   height: 40px;
+  position: fixed;
+  background-color: white;
+  border-top: gray solid 1px;
+  border-bottom: gray solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
   width: 100%;
   max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
-  position: fixed;
-  top: 0px;
-  background-color: white;
 }
 
 .nav-menu-block {
@@ -18,6 +25,11 @@
   cursor: pointer;
   font-size: 25px;
   font-weight: 500;
+  border-right: gray .5px solid;
+}
+
+.nav-menu-block-first {
+  border-left: .5px black solid;
 }
 
 .nav-menu-block:hover {

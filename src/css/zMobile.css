@@ -18,6 +18,7 @@
 
   .banner-buttons {
     margin: 0px;
+    margin-bottom: 10px;
   }
   .job-title-text, .name-text {
     text-align: center;
@@ -29,9 +30,11 @@
   }
   .job-title-text {
     margin-top: 15px;
+    margin-bottom: 5px;
   }
   .photo {
     margin-bottom: 25px;
+    margin-top: 50px;
   }
   .project {
     margin-bottom: 0px;
