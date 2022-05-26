@@ -15,23 +15,19 @@ import { Projects } from './Projects'
 import { Contact } from './Contact'
 
 const App = () => {
-  const homeElement = useRef(null)
-  const aboutElement = useRef(null)
-  const skillsElement = useRef(null)
-  const projectsElement = useRef(null)
-  const contactElement = useRef(null)
-
   const navigate = section => {
-    const elementToScrollTo = {
-      home: homeElement,
-      about: aboutElement,
-      skills: skillsElement,
-      projects: projectsElement,
-      contact: contactElement
-    }[section]
-    elementToScrollTo.current.scrollIntoView(
-        { behavior: "smooth" }
-    )
+    const elementId = section + '-element'
+    const element = document.getElementById(elementId)
+    const offSet = 41
+    const bodyRect = document.body.getBoundingClientRect().top
+    const elementRect = element.getBoundingClientRect().top
+    const elementPosition = elementRect - bodyRect
+    const offsetPosition = elementPosition - offSet
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    })
   }
 
   const navMenu = () => {
@@ -56,25 +52,25 @@ const App = () => {
   return (
     <div className="App">
       {navMenu()}
-      <div ref={homeElement} className="wide-section home-wide-section">
+      <div id="home-element" className="wide-section home-wide-section">
         <Home />
       </div>
-      <div ref={aboutElement} className="wide-section about-wide-section">
+      <div id="about-element" className="wide-section about-wide-section">
         <Section name="about" title="about me">
           <About />
         </Section>
       </div>
-      <div ref={skillsElement} className="wide-section skills-wide-section">
+      <div id="skills-element" className="wide-section skills-wide-section">
         <Section name="skills" title="skills">
           <Skills />
         </Section>
       </div>
-      <div ref={projectsElement} className="wide-section projects-wide-section">
+      <div id="projects-element" className="wide-section projects-wide-section">
         <Section name="projects" title="projects">
           <Projects />
         </Section>
       </div>
-      <div ref={contactElement} className="wide-section contact-wide-section">
+      <div id="contact-element" className="wide-section contact-wide-section">
         <Section name="contact" title="contact me">
           <Contact />
         </Section>
