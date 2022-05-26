@@ -44,7 +44,10 @@ h2 {
 }
 
 .section-wrapper {
-  background-color: #6610F2;
+  width: 100%;
+}
+.section.skills {
+  max-width: 1200px;
 }
 
 .title {

@@ -71,7 +71,7 @@ const App = () => {
           <Skills/>
         </Section>
       </div>
-      <div ref={portfolioElement}>
+      <div ref={portfolioElement} className="section-wrapper">
         <Section name="portfolio">
           <Projects />
         </Section>
