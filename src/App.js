@@ -52,40 +52,34 @@ const App = () => {
   return (
     <div className="App">
       {navMenu()}
-      <div id="home-element" className="wide-section home-wide-section">
+      <Section name="home">
         <Home />
-      </div>
-      <div id="about-element" className="wide-section about-wide-section">
-        <Section name="about" title="about me">
-          <About />
-        </Section>
-      </div>
-      <div id="skills-element" className="wide-section skills-wide-section">
-        <Section name="skills" title="skills">
-          <Skills />
-        </Section>
-      </div>
-      <div id="projects-element" className="wide-section projects-wide-section">
-        <Section name="projects" title="projects">
-          <Projects />
-        </Section>
-      </div>
-      <div id="contact-element" className="wide-section contact-wide-section">
-        <Section name="contact" title="contact me">
-          <Contact />
-        </Section>
-      </div>
+      </Section>
+      <Section name="about" title="about me">
+        <About />
+      </Section>
+      <Section name="skills" title="skills">
+        <Skills />
+      </Section>
+      <Section name="projects" title="projects">
+        <Projects />
+      </Section>
+      <Section name="contact" title="contact me">
+        <Contact />
+      </Section>
     </div>
   );
 }
 
 const Section = ({children, name, title}) => {
   return (
-    <div className={"section-wrapper " + name + "-section-wrapper"}>
-      <div className={"section " + name}>
-        <h2 className="title">{title?.toUpperCase()}</h2>
-        <div className={"content " + name}>
-          {children}
+    <div id={name + "-element"} className={"wide-section " + name + "-wide-section"}>
+      <div className={"section-wrapper " + name + "-section-wrapper"}>
+        <div className={"section " + name}>
+          <h2 className="title">{title?.toUpperCase()}</h2>
+          <div className={"content " + name}>
+            {children}
+          </div>
         </div>
       </div>
     </div>
