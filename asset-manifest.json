@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "//benjzagorski.com/static/css/main.e7c7ab2c.css",
-    "main.js": "//benjzagorski.com/static/js/main.9e893beb.js",
+    "main.css": "//benjzagorski.com/static/css/main.b75ef519.css",
+    "main.js": "//benjzagorski.com/static/js/main.170e17e8.js",
     "static/js/787.37faa4c4.chunk.js": "//benjzagorski.com/static/js/787.37faa4c4.chunk.js",
+    "static/media/photo.jpg": "//benjzagorski.com/static/media/photo.38cee891bc518dc0a6e8.jpg",
     "static/media/Trapped.gif": "//benjzagorski.com/static/media/Trapped.408a6977610f5398dc6f.gif",
     "static/media/WhatPage.png": "//benjzagorski.com/static/media/WhatPage.b0eba9a992bdca2a5046.png",
     "static/media/ScavengerHunt.gif": "//benjzagorski.com/static/media/ScavengerHunt.ad53fc5df289675b2413.gif",
@@ -13,6 +14,7 @@
     "static/media/DrinkSelector.png": "//benjzagorski.com/static/media/DrinkSelector.19bef293a693cfbbfc9f.png",
     "static/media/ZagorskiADT.png": "//benjzagorski.com/static/media/ZagorskiADT.cae6e6d309367e254377.png",
     "static/media/NeedleX.png": "//benjzagorski.com/static/media/NeedleX.62926371706c7406bf81.png",
+    "static/media/Resume-BenjaminZagorski.pdf": "//benjzagorski.com/static/media/Resume-BenjaminZagorski.e49811902b221b58fe58.pdf",
     "static/media/postgresql.png": "//benjzagorski.com/static/media/postgresql.1b9b2da8d94b8c3d4a15.png",
     "static/media/DrawCircle.gif": "//benjzagorski.com/static/media/DrawCircle.9b5004ff4d609cbb6400.gif",
     "static/media/DrawCircleSS.png": "//benjzagorski.com/static/media/DrawCircleSS.aa02a309e90344a09aa2.png",
@@ -23,12 +25,12 @@
     "static/media/github_icon.svg": "//benjzagorski.com/static/media/github_icon.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "static/media/react.svg": "//benjzagorski.com/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "//benjzagorski.com/index.html",
-    "main.e7c7ab2c.css.map": "//benjzagorski.com/static/css/main.e7c7ab2c.css.map",
-    "main.9e893beb.js.map": "//benjzagorski.com/static/js/main.9e893beb.js.map",
+    "main.b75ef519.css.map": "//benjzagorski.com/static/css/main.b75ef519.css.map",
+    "main.170e17e8.js.map": "//benjzagorski.com/static/js/main.170e17e8.js.map",
     "787.37faa4c4.chunk.js.map": "//benjzagorski.com/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7c7ab2c.css",
-    "static/js/main.9e893beb.js"
+    "static/css/main.b75ef519.css",
+    "static/js/main.170e17e8.js"
   ]
 }
