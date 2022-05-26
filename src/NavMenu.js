@@ -2,7 +2,7 @@ export const NavMenu = () => {
   const navigate = section => {
     const elementId = section + '-element'
     const element = document.getElementById(elementId)
-    const offSet = 41
+    const offSet = window.innerWidth > 750 ? 41 : 31
     const bodyRect = document.body.getBoundingClientRect().top
     const elementRect = element.getBoundingClientRect().top
     const elementPosition = elementRect - bodyRect

@@ -7,7 +7,8 @@
 }
 
 .project {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   background-color: #B2ABF2;
   margin: 30px;
   height: 400px;

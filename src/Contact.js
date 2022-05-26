@@ -45,17 +45,17 @@ export const Contact = () => {
         <div className="contact-info-text">(714)809-9426</div>
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/benjzagorski/" target="_blank">
-            <img src={LinkedInLogo} className="contact-logo"/>
+            <img src={LinkedInLogo} className="contact-icon"/>
           </a>
           <a href="https://github.com/MrMicrowaveOven" target="_blank">
-            <img src={GithubLogo} className="contact-logo"/>
+            <img src={GithubLogo} className="contact-icon"/>
           </a>
         </div>
-        <div>Email me at Benj@Zagorski.com</div>
+        <div className="contact-info-text">Email me at Benj@Zagorski.com</div>
       </div>
       <div className="contact-form">
         <div className="contact-form-title">Say Hello!</div>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="contact-form-fields">
           <div>Name</div>
           <input
             type='text'
