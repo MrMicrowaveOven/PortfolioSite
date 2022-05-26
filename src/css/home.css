@@ -1,0 +1,68 @@
+.section.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.name-text {
+  max-width: 500px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.job-title-text {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.banner-buttons {
+  margin-left: 80px;
+  max-width: 300px;
+}
+
+.banner-button {
+  width: 200px;
+  height: 50px;
+  background-color: gray;
+  margin: 20px;
+}
+
+.banner-button:hover {
+  background-color: black;
+  animation: bannerButtonHoverAnimation .5s;
+}
+
+@keyframes bannerButtonHoverAnimation {
+  from {background-color: gray;}
+  to {background-color: black;}
+}
+
+.banner-button-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.banner-button-text {
+  color: white;
+}
+
+.photo-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo {
+  width: 300px;
+  height: 450px;
+  margin: 50px;
+}

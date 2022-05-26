@@ -1,0 +1,39 @@
+@media (max-width: 750px) {
+  .nav-menu-block {
+    font-size: 12.5px;
+  }
+  .section.home {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .banner-buttons {
+    margin: 0px;
+  }
+  .job-title-text, .name-text {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .name-text {
+    margin-top: 0px;
+  }
+  .job-title-text {
+    margin-top: 15px;
+  }
+  .photo {
+    margin-bottom: 25px;
+  }
+  .project {
+    margin-bottom: 0px;
+  }
+  .projects {
+    margin-bottom: 25px;
+  }
+}

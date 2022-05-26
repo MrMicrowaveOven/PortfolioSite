@@ -1,4 +1,3 @@
-import './css/skills.css'
 import { skillData } from './data/skills';
 
 export const Skills = () => {
