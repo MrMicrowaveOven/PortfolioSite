@@ -10,6 +10,7 @@ export const Contact = () => {
     message: '',
     reply_to: '',
   });
+  const [emailSentStatus, setEmailSentStatus] = useState(null)
   const handleChange = (e) => {
     setEmailInfo({ ...emailInfo, [e.target.name]: e.target.value });
   };
@@ -24,17 +25,19 @@ export const Contact = () => {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        setEmailSentStatus(true)
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        setEmailSentStatus(false)
       });
   };
   return (
     <div className="contact-body">
       <div className="contact-info">
         <div className="contact-info-title">Contact Info</div>
-        <div className="contact-info">Currently residing in New Orleans, LA</div>
-        <div className="contact-info">(714)809-9426</div>
+        <div className="contact-info-text">Currently residing in New Orleans, LA</div>
+        <div className="contact-info-text">(714)809-9426</div>
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/benjzagorski/" target="_blank">
             <img src={LinkedInLogo} className="contact-logo"/>
@@ -48,29 +51,41 @@ export const Contact = () => {
       <div className="contact-form">
         <div className="contact-form-title">Say Hello!</div>
         <form onSubmit={onSubmit}>
+          <div>Name</div>
           <input
             type='text'
             name='from_name'
-            placeholder='from name'
+            placeholder='Name'
             value={emailInfo.from_name}
             onChange={handleChange}
           />
-          <input
-            type='text'
-            name='message'
-            placeholder='Your message'
-            value={emailInfo.message}
-            onChange={handleChange}
-          />
+          <div>Email</div>
           <input
             type='text'
             name='reply_to'
-            placeholder='Your email'
+            placeholder='Email'
             value={emailInfo.reply_to}
             onChange={handleChange}
           />
+          <div>Message</div>
+          <textarea
+            type='text_area'
+            name='message'
+            placeholder='Message'
+            value={emailInfo.message}
+            onChange={handleChange}
+            rows="10"
+            cols="30"
+          />
+          <br/>
           <button type='submit'>Submit</button>
         </form>
+        <div className={emailSentStatus === true ? "email-confirmation-message" : "hidden"}>Email sent!</div>
+        <div className={emailSentStatus === false ? "email-failure-message" : "hidden"}>
+          Sorry, looks like something went wrong.
+          <br/>
+          Try emailing me at benj@zagorski.com
+        </div>
       </div>
     </div>
   )

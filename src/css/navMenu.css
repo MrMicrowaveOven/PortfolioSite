@@ -2,7 +2,7 @@
   width: 100%;
   height: 40px;
   position: fixed;
-  background-color: white;
+  background-color: lightgray;
   border-top: gray solid 1px;
   border-bottom: gray solid 1px;
   display: flex;
@@ -34,11 +34,11 @@
 
 .nav-menu-block:hover {
   background-color: gray;
-  color: white;
+  color: lightgray;
   animation: hoverAnimation .5s;
 }
 @keyframes hoverAnimation {
-  from {background-color: white;}
+  from {background-color: lightgray;}
   to {background-color: gray;}
   from {color: gray}
   to {color: white}
