@@ -1,19 +1,54 @@
+:root {
+  --section1: rgba(58, 134, 255);
+  --section2: rgba(131, 56, 236);
+  --section3: rgba(255, 0, 110);
+  --section4: rgba(251, 86, 7);
+  --section5: rgba(255, 190, 11);
+
+  --transition1: linear-gradient(var(--section1), var(--section2));
+  --transition2: linear-gradient(var(--section2), var(--section3));
+  --transition3: linear-gradient(var(--section3), var(--section4));
+  --transition4: linear-gradient(var(--section4), var(--section5));
+}
+
+.section-transition {
+  height: 70px;
+  width: 100%;
+}
+
+.project {
+  background-color: var(--section2)
+}
+
 .home-wide-section {
-  background-color: #89043D;
+  background-color: var(--section1);
 }
 
 .about-wide-section {
-  background-color: #B2ABF2;
+  background-color: var(--section2);
 }
 
 .skills-wide-section {
-  background-color: #2FE6DE;
+  background-color: var(--section3);
 }
 
 .projects-wide-section {
-  background-color: #1C3041;
+  background-color: var(--section4);
 }
 
 .contact-wide-section {
-  background-color: #18F2B2;
+  background-color: var(--section5);
+}
+
+.section-transition-1 {
+  background: var(--transition1);
+}
+.section-transition-2 {
+  background: var(--transition2);
+}
+.section-transition-3 {
+  background: var(--transition3);
+}
+.section-transition-4 {
+  background: var(--transition4);
 }
