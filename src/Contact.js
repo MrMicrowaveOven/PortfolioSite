@@ -51,7 +51,9 @@ export const Contact = () => {
             <img src={GithubLogo} className="contact-icon"/>
           </a>
         </div>
-        <div className="contact-info-text">Email me at Benj@Zagorski.com</div>
+        <div className="contact-info-text">Email me at&nbsp;
+          <a href = "mailto: benj@zagorski.com">Benj@Zagorski.com</a>
+        </div>
       </div>
       <div className="contact-form">
         <div className="contact-form-title">Say Hello!</div>
