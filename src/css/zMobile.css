@@ -61,3 +61,13 @@
     padding-top: 15px;
   }
 }
+
+@media (max-width: 540px) {
+  .skill-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .skill-name {
+    font-size: 15px;
+  }
+}
