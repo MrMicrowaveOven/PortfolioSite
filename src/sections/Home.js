@@ -3,6 +3,7 @@ export const Home = () => {
     <div className="section home">
       <div className="home-info">
         <h1 className="name-text">Benjamin Zagorski</h1>
+        <h2 className="pgp-text">(he/him)</h2>
         <h1 className="job-title-text">Full-Stack Software Engineer</h1>
         <div className="banner-buttons">
           <Button
