@@ -12,12 +12,12 @@
 }
 
 .section-transition {
-  height: 70px;
+  height: 50px;
   width: 100%;
 }
 
 .project {
-  background-color: var(--section2)
+  background-color: var(--section1)
 }
 
 .home-wide-section {

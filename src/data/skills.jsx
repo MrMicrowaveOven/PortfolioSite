@@ -20,7 +20,7 @@ export const skillData = [
         link: "https://www.google.com/search?q=python",
     },
     {
-        displayName: "PostGresQL",
+        displayName: "PostGres",
         imgSource: "./data/icons/postgresql.png",
         link: "https://www.google.com/search?q=postgresql",
     },
