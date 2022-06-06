@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import LinkedInLogo from './data/icons/linkedin.png'
-import GithubLogo from './data/icons/github.svg'
+import LinkedInLogo from './../data/icons/linkedin.png'
+import GithubLogo from './../data/icons/github.svg'
 
 export const Contact = () => {
   const [emailInfo, setEmailInfo] = useState({
