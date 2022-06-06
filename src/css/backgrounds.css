@@ -1,9 +1,9 @@
 :root {
-  --section1: rgba(58, 134, 255);
-  --section2: rgba(131, 56, 236);
-  --section3: rgba(255, 0, 110);
-  --section4: rgba(251, 86, 7);
-  --section5: rgba(255, 190, 11);
+  --section1: rgba(58, 134, 255, .8);
+  --section2: rgba(131, 56, 236, .8);
+  --section3: rgba(255, 0, 110, .8);
+  --section4: rgba(251, 86, 7, .8);
+  --section5: rgba(255, 190, 11, .8);
 
   --transition1: linear-gradient(var(--section1), var(--section2));
   --transition2: linear-gradient(var(--section2), var(--section3));
