@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.370b50ef.css",
-    "main.js": "/static/js/main.50f88239.js",
+    "main.css": "/static/css/main.383c9874.css",
+    "main.js": "/static/js/main.5fbb97e9.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/Trapped.gif": "/static/media/Trapped.408a6977610f5398dc6f.gif",
     "static/media/WhatPage.png": "/static/media/WhatPage.b0eba9a992bdca2a5046.png",
@@ -10,6 +10,7 @@
     "static/media/PsychicMarilyn.png": "/static/media/PsychicMarilyn.8620bc657ea180619387.png",
     "static/media/photo-small.jpg": "/static/media/photo-small.f82736bc69e2843121fc.jpg",
     "static/media/SudokuSolver.gif": "/static/media/SudokuSolver.987e9d6c43b1b955ae2b.gif",
+    "static/media/react_native.png": "/static/media/react_native.283f9f863581bb226e65.png",
     "static/media/ZADT.png": "/static/media/ZADT.d8845e5c9055dccf3894.png",
     "static/media/DrinkSelector.png": "/static/media/DrinkSelector.19bef293a693cfbbfc9f.png",
     "static/media/ZagorskiADT.png": "/static/media/ZagorskiADT.cae6e6d309367e254377.png",
@@ -24,12 +25,12 @@
     "static/media/github_icon.svg": "/static/media/github_icon.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "static/media/react.svg": "/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "/index.html",
-    "main.370b50ef.css.map": "/static/css/main.370b50ef.css.map",
-    "main.50f88239.js.map": "/static/js/main.50f88239.js.map",
+    "main.383c9874.css.map": "/static/css/main.383c9874.css.map",
+    "main.5fbb97e9.js.map": "/static/js/main.5fbb97e9.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.370b50ef.css",
-    "static/js/main.50f88239.js"
+    "static/css/main.383c9874.css",
+    "static/js/main.5fbb97e9.js"
   ]
 }
