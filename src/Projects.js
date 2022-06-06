@@ -1,5 +1,5 @@
 import { projectData } from "./data/projects"
-import GithubLogo from "./data/icons/github_icon.svg"
+import GithubLogo from "./data/icons/github.svg"
 
 export const Projects = () => {
     return (
