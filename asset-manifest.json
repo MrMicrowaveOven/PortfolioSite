@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.383c9874.css",
-    "main.js": "/static/js/main.5fbb97e9.js",
+    "main.js": "/static/js/main.cd4c5308.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/Trapped.gif": "/static/media/Trapped.408a6977610f5398dc6f.gif",
     "static/media/WhatPage.png": "/static/media/WhatPage.b0eba9a992bdca2a5046.png",
@@ -22,15 +22,15 @@
     "static/media/ruby.png": "/static/media/ruby.1f2d78ef8e3b4b4ad829.png",
     "static/media/rails.png": "/static/media/rails.78d0e966482328c10d06.png",
     "static/media/graphql.png": "/static/media/graphql.c20d501c2e222d3f4874.png",
-    "static/media/github_icon.svg": "/static/media/github_icon.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
+    "static/media/github.svg": "/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "static/media/react.svg": "/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "/index.html",
     "main.383c9874.css.map": "/static/css/main.383c9874.css.map",
-    "main.5fbb97e9.js.map": "/static/js/main.5fbb97e9.js.map",
+    "main.cd4c5308.js.map": "/static/js/main.cd4c5308.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.383c9874.css",
-    "static/js/main.5fbb97e9.js"
+    "static/js/main.cd4c5308.js"
   ]
 }
