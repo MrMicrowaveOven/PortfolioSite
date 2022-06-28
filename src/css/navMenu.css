@@ -5,6 +5,7 @@
   background-color: lightgray;
   display: flex;
   justify-content: center;
+  border-top: gray .5px solid;
 }
 
 .nav-menu {
@@ -27,7 +28,7 @@
 }
 
 .nav-menu-block-first {
-  border-left: .5px black solid;
+  border-left: gray .5px solid;
 }
 
 .nav-menu-block:hover {
