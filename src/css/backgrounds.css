@@ -4,6 +4,7 @@
   --section3: rgba(255, 0, 110, .6);
   --section4: rgba(251, 86, 7, .6);
   --section5: rgba(255, 190, 11, .6);
+  --project: rgba(58, 134, 255, .9);
 
   --transition1: linear-gradient(var(--section1), var(--section2));
   --transition2: linear-gradient(var(--section2), var(--section3));
@@ -17,7 +18,7 @@
 }
 
 .project {
-  background-color: var(--section1)
+  background-color: var(--project)
 }
 
 .home-wide-section {
