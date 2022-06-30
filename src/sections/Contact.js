@@ -63,6 +63,7 @@ export const Contact = () => {
             type='text'
             name='from_name'
             placeholder='Name'
+            className="contact-text-field"
             value={emailInfo.from_name}
             onChange={handleChange}
           />
@@ -71,6 +72,7 @@ export const Contact = () => {
             type='text'
             name='reply_to'
             placeholder='Email'
+            className="contact-text-field"
             value={emailInfo.reply_to}
             onChange={handleChange}
           />
@@ -79,13 +81,14 @@ export const Contact = () => {
             type='text_area'
             name='message'
             placeholder='Message'
+            className="contact-textarea-field"
             value={emailInfo.message}
             onChange={handleChange}
             rows="10"
             cols="30"
           />
           <br/>
-          <button type='submit' disabled={formValid ? "" : "disabled"}>Submit</button>
+          <button className="contact-button" type='submit' disabled={formValid ? "" : "disabled"}>Submit</button>
         </form>
         <div className={emailSentStatus === true ? "email-confirmation-message" : "hidden"}>Email sent!</div>
         <div className={emailSentStatus === false ? "email-failure-message" : "hidden"}>

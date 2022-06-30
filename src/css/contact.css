@@ -31,6 +31,23 @@
   margin: 15px;
 }
 
+.contact-text-field {
+  margin: 5px;
+  font-size: 20px;
+  width: 300px;
+}
+
+.contact-textarea-field {
+  margin: 5px;
+  font-size: 20px;
+  width: 300px;
+}
+
+.contact-button {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
 .hidden {
   visibility: hidden;
 }

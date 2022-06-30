@@ -53,7 +53,8 @@
 
   .contact-body {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    margin-left: 35px;
   }
 
   .contact-info, .contact-form {
