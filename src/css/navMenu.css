@@ -34,7 +34,7 @@
 
 .nav-menu-block:hover {
   background-color: gray;
-  color: lightgray;
+  color: white;
   animation: hoverAnimation .5s;
 }
 @keyframes hoverAnimation {
