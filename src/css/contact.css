@@ -43,11 +43,23 @@
   width: 300px;
 }
 
+.confirmation-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .contact-button {
   font-size: 20px;
   margin-left: 5px;
+  height: 30px;
+}
+
+.email-confirmation-message {
+  margin-left: 20px;
+  line-height: 30px;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
