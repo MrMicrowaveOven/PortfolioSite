@@ -94,7 +94,7 @@ export const Contact = () => {
             <div className={emailSentStatus === false ? "email-confirmation-message" : "hidden"}>
             Sorry, looks like something went wrong.
             <br/>
-            Try emailing me at benj@zagorski.com
+            Try emailing me at <a href = "mailto: benj@zagorski.com">Benj@Zagorski.com</a>
             </div>
           </div>
         </form>
