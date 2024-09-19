@@ -44,7 +44,7 @@ export const projectData = [
     {
         displayName: "Bocce Scoreboard",
         tagline: "A bocce ball scoring android app",
-        imgSource: "./data/projectImages/DrawCircle.gif",
+        imgSource: "./data/projectImages/BocceScore.gif",
         mobile: true,
         link: "https://play.google.com/store/apps/details?id=com.betterscore&hl=en_US",
         github: "https://github.com/MrMicrowaveOven/bocce-score",
