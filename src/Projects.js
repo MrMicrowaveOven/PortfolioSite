@@ -7,7 +7,14 @@ export const Projects = () => {
             {projectData.map((project, index) =>
                 <div className="project" key={index}>
                     <a href={project.link} target="_blank">
-                        <img className="project-image" src={require(`${project.imgSource}`)}></img>
+                        { project.mobile
+                            ?
+                                <div className="project-image-mobile-container">
+                                    <img className='project-image-mobile' src={require(`${project.imgSource}`)}></img>
+                                </div>
+                            :
+                                <img className='project-image' src={require(`${project.imgSource}`)}></img>
+                        }
                     </a>
                     <div className="project-name">{project.displayName}</div>
                     <p className="project-tagline">{project.tagline}</p>

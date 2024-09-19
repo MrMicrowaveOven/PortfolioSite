@@ -41,4 +41,20 @@ export const projectData = [
         link: "https://mrmicrowaveoven.github.io/DrawCircle/",
         github: "https://github.com/MrMicrowaveOven/DrawCircle",
     },
+    {
+        displayName: "Bocce Scoreboard",
+        tagline: "A bocce ball scoring android app",
+        imgSource: "./data/projectImages/DrawCircle.gif",
+        mobile: true,
+        link: "https://play.google.com/store/apps/details?id=com.betterscore&hl=en_US",
+        github: "https://github.com/MrMicrowaveOven/bocce-score",
+    },
+    {
+        displayName: "Chill Pill",
+        tagline: "A pill tracker android app",
+        imgSource: "./data/projectImages/ChillPill.gif",
+        mobile: true,
+        link: "https://play.google.com/store/apps/details?id=com.chillpill&hl=en_US",
+        github: "https://github.com/MrMicrowaveOven/chill-pill",
+    },
 ]
