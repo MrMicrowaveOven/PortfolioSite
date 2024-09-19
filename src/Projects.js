@@ -6,19 +6,21 @@ export const Projects = () => {
         <div className="projects">
             {projectData.map((project, index) =>
                 <div className="project" key={index}>
-                    <a href={project.link} target="_blank">
-                        { project.mobile
-                            ?
-                                <div className="project-image-mobile-container">
+                    { project.mobile
+                        ?
+                            <div className="project-image-mobile-container">
+                                <a href={project.link} target="_blank">
                                     <img className='project-image-mobile' src={require(`${project.imgSource}`)}></img>
-                                </div>
-                            :
+                                </a>
+                            </div>
+                        :
+                            <a href={project.link} target="_blank">
                                 <img className='project-image' src={require(`${project.imgSource}`)}></img>
-                        }
-                    </a>
-                    <div className="project-name">{project.displayName}</div>
-                    <p className="project-tagline">{project.tagline}</p>
-                    <div className="github-icon-container">
+                            </a>
+                    }
+                    <div className={`project-name ${project.mobile && 'project-name-mobile'}`}>{project.displayName}</div>
+                    <p className={`project-tagline ${project.mobile && 'project-tagline-mobile'}`}>{project.tagline}</p>
+                    <div className={`github-icon-container ${project.mobile && 'github-icon-container-mobile'}`}>
                         <a href={project.github} target="_blank">
                             <img className="github-icon" src={GithubLogo}></img>
                         </a>
