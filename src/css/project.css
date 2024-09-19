@@ -1,6 +1,8 @@
 .subtitle {
   font-size: 35px;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .projects {
@@ -20,26 +22,20 @@
   border: 3px solid black;
 }
 
+.project-mobile {
+  height: 750px;
+}
+
 .project-image {
   width: 280px;
   height: 225px;
   margin: 10px;
 }
 
-.project-image-mobile-container {
-  width: 280px;
-  height: 300px;
-  margin: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .project-image-mobile {
-  width: 145px;
-  height: 300px;
+  width: 280px;
+  height: 575px;
+  margin: 10px;
 }
 
 .project-name {
@@ -49,19 +45,14 @@
   margin-bottom: 16px;
 }
 
-.project-name-mobile {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+.project-name-mobile {}
 
 .project-tagline {
   text-align: center;
   font-size: 15px;
 }
 
-.project-tagline-mobile {
-
-}
+.project-tagline-mobile {}
 
 .github-icon-container {
   width: 100%;
@@ -72,9 +63,7 @@
   justify-content: center;
 }
 
-.github-icon-container-mobile {
-  height: 35px;
-}
+.github-icon-container-mobile {}
 
 .github-icon {
   width: 25px;
