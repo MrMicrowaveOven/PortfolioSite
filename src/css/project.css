@@ -30,12 +30,14 @@
   width: 280px;
   height: 225px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .project-image-mobile {
   width: 280px;
   height: 575px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .project-name {
