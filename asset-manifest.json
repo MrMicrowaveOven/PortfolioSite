@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3b401ba.css",
+    "main.css": "/static/css/main.80b88f84.css",
     "main.js": "/static/js/main.afc430d0.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/BocceScore.webm": "/static/media/BocceScore.c462839d6d3608635b47.webm",
@@ -29,12 +29,12 @@
     "static/media/github.svg": "/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "static/media/react.svg": "/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "/index.html",
-    "main.b3b401ba.css.map": "/static/css/main.b3b401ba.css.map",
+    "main.80b88f84.css.map": "/static/css/main.80b88f84.css.map",
     "main.afc430d0.js.map": "/static/js/main.afc430d0.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3b401ba.css",
+    "static/css/main.80b88f84.css",
     "static/js/main.afc430d0.js"
   ]
 }
