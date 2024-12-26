@@ -23,6 +23,7 @@
 
 .algorithm-name, .algorithm-description {
     text-align: center;
+    color: black;
 }
 
 .algorithm-name {

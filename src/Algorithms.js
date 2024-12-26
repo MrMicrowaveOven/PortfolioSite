@@ -10,7 +10,7 @@ export const Algorithms = () => {
                 {algorithmData.map((algorithm) => {
                     return (
                         <div className="algorithm">
-                            <a href={algorithm.link} target="_blank">
+                            <a style={{"text-decoration": "none"}} href={algorithm.link} target="_blank">
                                 <div className="algorithm-box">
                                     <div className="algorithm-name">{algorithm.displayName}</div>
                                     <div className="algorithm-description">{algorithm.description}</div>
