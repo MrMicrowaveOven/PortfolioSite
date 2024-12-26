@@ -1,4 +1,5 @@
 import { algorithmData } from "./data/algorithms"
+import GithubLogo from "./data/icons/github.svg"
 
 export const Algorithms = () => {
     return (
@@ -14,6 +15,9 @@ export const Algorithms = () => {
                                 <div className="algorithm-box">
                                     <div className="algorithm-name">{algorithm.displayName}</div>
                                     <div className="algorithm-description">{algorithm.description}</div>
+                                    <div className="github-icon-container">
+                                        <img className="github-icon" src={GithubLogo} />
+                                    </div>
                                 </div>
                             </a>
                         </div>

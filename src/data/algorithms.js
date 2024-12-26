@@ -12,7 +12,7 @@ export const algorithmData = [
     {
         displayName: "Clock Hands Riddle",
         link: "https://github.com/MrMicrowaveOven/clock_hands_riddle",
-        description: "A clock simulation to solve the riddle: When do the hands of a clock cross each other?",
+        description: "When do the hands of a clock cross each other?",
     },
 
 ]

@@ -1,5 +1,6 @@
 .algorithms {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -10,7 +11,7 @@
     max-width: 300px;
     /* width: 100%; */
     margin: 30px;
-    height: 150px;
+    height: 170px;
     border-radius: 10px;
     border: 3px solid black;
 }
@@ -36,4 +37,8 @@
     margin: auto;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.github-icon {
+    margin: auto;
 }
