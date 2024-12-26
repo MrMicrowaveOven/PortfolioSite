@@ -1,10 +1,20 @@
+.algorithms-section {
+    width: 1200px;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .algorithms {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* max-width: 1500px; */
+    width: 1500px;
+    text-align: center;
   }
 
 .algorithm {
