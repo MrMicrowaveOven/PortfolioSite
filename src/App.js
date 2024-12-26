@@ -1,4 +1,3 @@
-import { useRef } from "react"
 import './css/about.css'
 import './css/App.css';
 import './css/backgrounds.css';
