@@ -6,6 +6,7 @@
   --section5: rgba(131, 56, 236, .65);
   --section6: rgba(28, 209, 0, 0.6);
   --project: rgba(131, 56, 236, .65);
+  --algorithm: rgba(58, 134, 255, .65);
 
   --transition1: linear-gradient(var(--section1), var(--section2));
   --transition2: linear-gradient(var(--section2), var(--section3));
@@ -21,6 +22,10 @@
 
 .project {
   background-color: var(--project)
+}
+
+.algorithm {
+  background-color: var(--algorithm);
 }
 
 .home-wide-section {
