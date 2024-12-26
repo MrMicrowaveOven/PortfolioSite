@@ -16,7 +16,7 @@ export const NavMenu = () => {
   return (
     <div className="nav-menu-wide">
       <div className="nav-menu">
-        {["home", "about", "skills", "projects", "contact"].map((sectionName, index) =>
+        {["home", "about", "skills", "projects", "algorithms", "contact"].map((sectionName, index) =>
           <div
             className={`nav-menu-block ${index === 0 && "nav-menu-block-first"}`}
             key={index}
