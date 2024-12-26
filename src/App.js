@@ -5,6 +5,7 @@ import './css/contact.css';
 import './css/home.css'
 import './css/navMenu.css'
 import './css/project.css'
+import './css/algorithms.css'
 import './css/skills.css'
 import './css/zMobile.css'
 import { NavMenu } from './sections/NavMenu'
@@ -12,6 +13,7 @@ import { Home } from './sections/Home'
 import { About } from './About'
 import { Skills } from './Skills'
 import { Projects } from './Projects'
+import { Algorithms } from './Algorithms'
 import { Contact } from './sections/Contact'
 import { Transition } from './Transition'
 
@@ -35,6 +37,10 @@ const App = () => {
         <Projects />
       </Section>
       <Transition index={4}/>
+      <Section name="algorithms" title="algorithms">
+        <Algorithms />
+      </Section>
+      <Transition index={5}/>
       <Section name="contact" title="contact me">
         <Contact />
       </Section>
