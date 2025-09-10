@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bb917c97.css",
-    "main.js": "/static/js/main.2caf2750.js",
+    "main.js": "/static/js/main.33253563.js",
     "static/js/453.151acd90.chunk.js": "/static/js/453.151acd90.chunk.js",
     "static/media/BocceScore.webm": "/static/media/BocceScore.c462839d6d3608635b47.webm",
     "static/media/ChillPill.webm": "/static/media/ChillPill.a1a8ab7d451cc3f14561.webm",
@@ -31,11 +31,11 @@
     "static/media/react.svg": "/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "/index.html",
     "main.bb917c97.css.map": "/static/css/main.bb917c97.css.map",
-    "main.2caf2750.js.map": "/static/js/main.2caf2750.js.map",
+    "main.33253563.js.map": "/static/js/main.33253563.js.map",
     "453.151acd90.chunk.js.map": "/static/js/453.151acd90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb917c97.css",
-    "static/js/main.2caf2750.js"
+    "static/js/main.33253563.js"
   ]
 }
