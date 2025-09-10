@@ -7,7 +7,6 @@ export const About = () => {
       <h4>Available for Hire</h4>
       {aboutData.map((aboutText, index) =>
         <div key={index}>
-          {index > 0 && <br/>}
           <p className="about-text">{aboutText}</p>
         </div>
       )}
