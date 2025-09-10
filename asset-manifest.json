@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba66d75c.css",
-    "main.js": "/static/js/main.cadc15b8.js",
-    "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
+    "main.css": "/static/css/main.0a63e572.css",
+    "main.js": "/static/js/main.7cd6379c.js",
+    "static/js/453.151acd90.chunk.js": "/static/js/453.151acd90.chunk.js",
     "static/media/BocceScore.webm": "/static/media/BocceScore.c462839d6d3608635b47.webm",
     "static/media/ChillPill.webm": "/static/media/ChillPill.a1a8ab7d451cc3f14561.webm",
     "static/media/BocceScore.gif": "/static/media/BocceScore.7be65fdcc1f28b652bd0.gif",
@@ -26,15 +26,16 @@
     "static/media/ruby.png": "/static/media/ruby.1f2d78ef8e3b4b4ad829.png",
     "static/media/rails.png": "/static/media/rails.78d0e966482328c10d06.png",
     "static/media/graphql.png": "/static/media/graphql.c20d501c2e222d3f4874.png",
+    "static/media/adobe-css-tools.cjs": "/static/media/adobe-css-tools.62c3d925a81f9a341442.cjs",
     "static/media/github.svg": "/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "static/media/react.svg": "/static/media/react.569cc8cb1fcc44ea0a65.svg",
     "index.html": "/index.html",
-    "main.ba66d75c.css.map": "/static/css/main.ba66d75c.css.map",
-    "main.cadc15b8.js.map": "/static/js/main.cadc15b8.js.map",
-    "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
+    "main.0a63e572.css.map": "/static/css/main.0a63e572.css.map",
+    "main.7cd6379c.js.map": "/static/js/main.7cd6379c.js.map",
+    "453.151acd90.chunk.js.map": "/static/js/453.151acd90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba66d75c.css",
-    "static/js/main.cadc15b8.js"
+    "static/css/main.0a63e572.css",
+    "static/js/main.7cd6379c.js"
   ]
 }
