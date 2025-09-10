@@ -21,7 +21,7 @@ export const Contact = () => {
       process.env.REACT_APP_EMAIL_SERVICE_ID,
       process.env.REACT_APP_EMAIL_TEMPLATE_ID,
       emailInfo,
-      process.env.REACT_APP_EMAIL_USER_ID
+      process.env.REACT_APP_EMAIL_PUBLIC_KEY
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
