@@ -43,6 +43,10 @@
   width: 300px;
 }
 
+.form-field-set {
+  border: none;
+}
+
 .confirmation-section {
   width: 100%;
   display: flex;

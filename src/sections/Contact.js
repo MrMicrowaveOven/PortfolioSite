@@ -58,6 +58,7 @@ export const Contact = () => {
       <div className="contact-form">
         <div className="contact-form-title">Say Hello!</div>
         <form onSubmit={onSubmit} className="contact-form-fields">
+          <fieldset disabled={emailSentStatus ? "disabled" : ""} className="form-field-set">
           <div>Name</div>
           <input
             type='text'
@@ -89,14 +90,15 @@ export const Contact = () => {
           />
           <br/>
           <div className="confirmation-section">
-            <button className="contact-button" type='submit' disabled={formValid ? "" : "disabled"}>Submit</button>
-            <div className={emailSentStatus === true ? "email-confirmation-message" : "hidden"}>Email sent!</div>
+            <button className="contact-button" type='submit' disabled={!formValid || emailSentStatus ? "disabled" : ""}>Submit</button>
+            <div className={emailSentStatus === true ? "email-confirmation-message" : "hidden"}>Email sent!  You'll be hearing from me shortly!</div>
             <div className={emailSentStatus === false ? "email-confirmation-message" : "hidden"}>
             Sorry, looks like something went wrong.
             <br/>
             Try emailing me at <a href = "mailto: benj@zagorski.com">Benj@Zagorski.com</a>
             </div>
           </div>
+          </fieldset>
         </form>
       </div>
     </div>
