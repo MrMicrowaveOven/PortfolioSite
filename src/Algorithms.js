@@ -8,10 +8,10 @@ export const Algorithms = () => {
                 These are just some fun things I wrote in passing.  Generally it's when there's a riddle I can't solve, or some statistical anomaly I don't understand.  Don't worry if you're not a coder!  They should still be an interesting read.
             </p>
             <div className="algorithms">
-                {algorithmData.map((algorithm) => {
+                {algorithmData.map((algorithm, index) => {
                     return (
-                        <div className="algorithm-margin">
-                            <a style={{"text-decoration": "none"}} href={algorithm.link} target="_blank">
+                        <div className="algorithm-margin" key={index}>
+                            <a style={{"textDecoration": "none"}} href={algorithm.link} target="_blank">
                                 <div className="algorithm">
                                     <div className="algorithm-name">{algorithm.displayName}</div>
                                     <div className="algorithm-description">{algorithm.description}</div>
