@@ -10,6 +10,7 @@ export const Contact = () => {
     message: '',
     reply_to: '',
   });
+  const [emailSending, setEmailSending] = useState(false)
   const [emailSentStatus, setEmailSentStatus] = useState(null)
   const handleChange = (e) => {
     setEmailInfo({ ...emailInfo, [e.target.name]: e.target.value });
@@ -17,6 +18,7 @@ export const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    setEmailSending(true)
     send(
       process.env.REACT_APP_EMAIL_SERVICE_ID,
       process.env.REACT_APP_EMAIL_TEMPLATE_ID,
@@ -26,10 +28,12 @@ export const Contact = () => {
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setEmailSentStatus(true)
+        setEmailSending(false)
       })
       .catch((err) => {
         console.log('FAILED...', err);
         setEmailSentStatus(false)
+        setEmailSending(false)
       });
   };
 
@@ -58,7 +62,7 @@ export const Contact = () => {
       <div className="contact-form">
         <div className="contact-form-title">Say Hello!</div>
         <form onSubmit={onSubmit} className="contact-form-fields">
-          <fieldset disabled={emailSentStatus ? "disabled" : ""} className="form-field-set">
+          <fieldset disabled={emailSentStatus || emailSending? "disabled" : ""} className="form-field-set">
           <div>Name</div>
           <input
             type='text'
