@@ -47,14 +47,16 @@
   margin-bottom: 16px;
 }
 
-.project-name-mobile {}
+.project-name-mobile {
+}
 
 .project-tagline {
   text-align: center;
   font-size: 15px;
 }
 
-.project-tagline-mobile {}
+.project-tagline-mobile {
+}
 
 .github-icon-container {
   width: 100%;
@@ -65,7 +67,8 @@
   justify-content: center;
 }
 
-.github-icon-container-mobile {}
+.github-icon-container-mobile {
+}
 
 .github-icon {
   width: 25px;
