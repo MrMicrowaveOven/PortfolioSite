@@ -61,7 +61,7 @@ export const Contact = () => {
         </div>
         <div className="contact-info-text">
           Email me at&nbsp;
-          <a href="mailto: benj@zagorski.com">Benj@Zagorski.com</a>
+          <a href="mailto: benny@zagorski.com">Benny@Zagorski.com</a>
         </div>
       </div>
       <div className="contact-form">
@@ -128,7 +128,7 @@ export const Contact = () => {
                 Sorry, looks like something went wrong.
                 <br />
                 Try emailing me at{" "}
-                <a href="mailto: benj@zagorski.com">Benj@Zagorski.com</a>
+                <a href="mailto: benny@zagorski.com">Benny@Zagorski.com</a>
               </div>
             </div>
           </fieldset>
