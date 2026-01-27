@@ -52,7 +52,7 @@ export const Contact = () => {
         </div>
         <div className="contact-info-text">(714)809-9426</div>
         <div className="contact-icons">
-          <a href="https://www.linkedin.com/in/benjzagorski/" target="_blank">
+          <a href="https://www.linkedin.com/in/bennyzagorski/" target="_blank">
             <img src={LinkedInLogo} className="contact-icon" />
           </a>
           <a href="https://github.com/MrMicrowaveOven" target="_blank">
