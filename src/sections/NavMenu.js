@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 export const NavMenu = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   const navigate = section => {
     const elementId = section + '-element'
     const element = document.getElementById(elementId)
@@ -12,10 +16,19 @@ export const NavMenu = () => {
       top: offsetPosition,
       behavior: "smooth"
     })
+    setIsOpen(false)
   }
   return (
     <div className="nav-menu-wide">
-      <div className="nav-menu">
+      <div
+        className={`nav-menu-hamburger ${isOpen && "nav-menu-hamburger-open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={`nav-menu ${isOpen && "nav-menu-open"}`}>
         {["home", "about", "skills", "projects", "algorithms", "contact"].map((sectionName, index) =>
           <div
             className={`nav-menu-block ${index === 0 && "nav-menu-block-first"}`}
